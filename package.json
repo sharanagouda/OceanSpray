@@ -1,0 +1,42 @@
+{
+  "name": "OceanSpray",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "eslint .",
+    "android": "react-native run-android",
+    "build-android": "cd android && ./gradlew clean && ./gradlew assembleRelease",
+    "build-android-windows": "cd android && gradlew clean && gradlew assembleRelease",
+    "android-release": "react-native run-android --variant=release"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "metro": "^0.54.1",
+    "prop-types": "^15.7.2",
+    "react": "16.8.3",
+    "react-native": "^0.59.9",
+    "react-native-elements": "^1.1.0",
+    "react-native-router-flux": "^4.0.6",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-vector-icons": "^6.4.2",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "redux-form": "^8.2.2",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0",
+    "save-dev": "^2.0.0",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
